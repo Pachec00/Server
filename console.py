@@ -1,3 +1,7 @@
+#consola del servidor (archivo de control)
+#este archivo forma parte de la estructura del servidor
+#este archivo sirve para el manejo del servidor durante la ejecucion
+
 import sys
 import os
 
@@ -45,11 +49,14 @@ while True:
         
         print('')
         #maintenance commands
+        print('Lista de comandos del sistema de mantenimiento:')
+        print('')
         print('-users --> Grafica del numero de usuarios')
         print('')
         
         command = str(input())
-        
         if command == 'users':
-            
             from maintenance import num_users
+        else : 
+            print('Comando no valido')   
+        
